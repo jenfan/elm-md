@@ -1,0 +1,18 @@
+{
+  "name": "elm-frontend-mydreams",
+  "version": "1.0.0",
+  "description": "👉 I gave [a talk](https://www.youtube.com/watch?v=x1FU3e0sT1I) to explain the principles I used to build this. I highly recommend watching it!",
+  "main": "elm.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "chokidar-cli": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch": "chokidar '**/*.elm' -c 'elm make src/PostDetailed/Main.elm --output ../app/assets/javascripts/elm/post_detailed.js --debug' --initial",
+    "compile": "elm make src/PostDetailed/Main.elm --output ../app/assets/javascripts/elm/post_detailed.js"
+  },
+  "author": "EvKots"
+}
